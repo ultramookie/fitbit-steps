@@ -2,3 +2,17 @@ fitbit steps
 
 simple script to export fitbit step counts into individual json files.
 i am using it to generate data to ingest into splunk.
+
+in order for all this to work....
+
+go to http://dev.fitbit.com and register an account, then register an app. from there you will get your client key and client secret.
+
+get: https://github.com/orcasgit/python-fitbit
+
+then use the gather_keys_cli.py to get your oauth_token and oauth_token_secret.
+
+take my script and add it to the root of python-fitbit so that you can use the python-fitbit wrapper.
+
+add all four of the things from above into my script. also, grab your user id and add to script.
+
+run and be happy.
