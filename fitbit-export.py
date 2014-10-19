@@ -16,9 +16,6 @@ end_date=''
 d = date.today()
 today = str(d.isoformat())
  
-#Setup an unauthorised client (e.g. with no user)
-unauth_client = fitbit.Fitbit(consumer_key, consumer_secret)
- 
 authd_client = fitbit.Fitbit(consumer_key, consumer_secret, user_key=user_key, user_secret=user_secret)
 
 max_step_stats = authd_client.time_series('activities/steps',user_id=uid,end_date=end_date,base_date='today')
