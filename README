@@ -1,0 +1,4 @@
+fitbit steps
+
+simple script to export fitbit step counts into individual json files.
+i am using it to generate data to ingest into splunk.
